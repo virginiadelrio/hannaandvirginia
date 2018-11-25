@@ -50,7 +50,7 @@ form textarea {
   border-bottom: 1px solid #ddd;
   margin-bottom: 10px;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 1em;
   height: 45px;
 }
 form textarea {
@@ -62,7 +62,7 @@ form button[type="submit"] {
   color: #fff;
   background: var(--mountains);
   font-family: "futura-pt-bold", sans-sans-serif;
-  font-size: 18px;
+  font-size: 1em;
   width: 100%;
   border: 1px solid #16a085;
   border-width: 1px 1px 3px;
