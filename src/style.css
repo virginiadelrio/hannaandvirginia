@@ -77,9 +77,9 @@ form button[type="submit"]:hover {
 }
 
 @media screen and (orientation: portrait) {
-  img { max-width: 90%; }
+  img, form { max-width: 90%; }
 }
 
 @media screen and (orientation: landscape) {
-  img { max-height: 90%; }
+  img, form { max-height: 90%; }
 }
