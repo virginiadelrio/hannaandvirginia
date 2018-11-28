@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "restricted area"
-AuthUserFile http://hannaandvirginia/src/tu/.htpasswd  
-require valid-user
