@@ -85,6 +85,6 @@ form button[type="submit"]:hover {
 }
 @media only screen and (max-width: 600px) {
     form {
-        font-size:2em;
+        font-size:1.2em;
     }
 }
