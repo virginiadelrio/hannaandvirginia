@@ -1,0 +1,122 @@
+@keyframes peces_2 {
+  0%   { opacity: 0; }
+  25%   { opacity: .5; }
+  50% { opacity: .7; }
+  100% { opacity: 0; }
+}
+
+#garabato_sol {
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 1000;
+  animation:dash 10s alternate infinite;
+}
+
+#hanna {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 100;
+  animation:cuerpos 15s linear alternate infinite;
+}
+
+#flecha {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 100;
+  animation:cuerpos 7s linear alternate infinite;
+}
+
+@keyframes cuerpos {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 5000;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+#barco{
+  animation: move 2s infinite alternate;
+}
+
+#bolsa {
+  animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+ from {
+   transform: translateX(0px);
+ }
+ to {
+   transform: translateX(5px);
+ }
+}
+
+#peces {
+  animation:
+  swing 15s infinite,
+  peces_2 15s infinite;
+}
+
+#medusa {
+ animation: bob 4s infinite alternate;
+}
+
+ @keyframes bob {
+  0% {
+      transform: translate(0px, 0px);
+      animation-timing-function:ease-in-out
+  }
+
+  50% {
+      transform: translate(0px, 12px);
+      animation-timing-function:ease-in-out
+  }
+
+  100% {
+      transform: translate(0px, 0px);
+      animation-timing-function:ease-in-out
+  }
+}
+
+@keyframes swing {
+from {
+  transform: rotate(-2deg);
+}
+to {
+  transform: rotate(8deg);
+}
+}
+
+#corazon1, #corazon3 {
+ animation:
+     heart 4s infinite;
+}
+#corazon2, #corazon4 {
+ animation:
+     heart 2s infinite;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.002);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.002);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
